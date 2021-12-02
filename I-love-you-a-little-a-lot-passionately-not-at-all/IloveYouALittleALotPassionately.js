@@ -21,3 +21,13 @@ function howMuchILoveYou(nbPetals) {
 		return (sayGirl[nbPetals]);
 	}
 }
+
+
+//or
+
+function howMuchILoveYou(nbPetals) {
+	if (nbPetals > 0) {
+		let sayGirl = ["I love you", "a little", "a lot", "passionately", "madly", "not at all"];
+		return (sayGirl[(nbPetals - 1) % sayGirl.length]);
+	}
+}
