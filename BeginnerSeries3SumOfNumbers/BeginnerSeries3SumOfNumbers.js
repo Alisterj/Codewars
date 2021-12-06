@@ -15,9 +15,8 @@ function getSum(a, b) {
 	if (a == b) {
 		return a;
 	}
-	let max = Math.max(a, b) + 1,
-		sum = 0;
-	for (let min = Math.min(a, b); min != max; min++) {
+	let sum = 0;
+	for (let min = Math.min(a, b); min != Math.max(a, b) + 1; min++) {
 		sum += min;
 	}
 	return sum;
