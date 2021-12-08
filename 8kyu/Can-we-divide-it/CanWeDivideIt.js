@@ -19,4 +19,5 @@ A few cases:
 // function isDivideBy(number, a, b) {
 // 	return (number % a == 0 && number % b == 0);
 // }
-const isDivideBy = (number, a, b) => number % a == 0 && number % b == 0;
+// const isDivideBy = (number, a, b) => number % a == 0 && number % b == 0;
+const isDivideBy = (number, a, b) => [a, b].every(i => number % i === 0);
