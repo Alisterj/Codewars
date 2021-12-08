@@ -8,7 +8,9 @@ Write a code that gives out the total amount for different days(d).
 */
 
 
-function rentalCarCost(d) {
-	return (40 * d - (d >= 7 ? 50 : d >= 3 ? 20 : 0));
-	// Your solution here
-}
+// function rentalCarCost(d) {
+// 	return (40 * d - (d >= 7 ? 50 : d >= 3 ? 20 : 0));
+// 	// Your solution here
+// }
+
+const rentalCarCost = d => 40 * d - (d >= 7 ? 50 : d >= 3 ? 20 : 0);
